@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 
 // PORT 80 is reserved for HTTP and port 443 is reserved for HTTPS
-const PORT = 3000; // Define the port number for the server
+const PORT = process.env.PORT || 8200; // Define the port number for the server
 const HOSTNAME = "localhost"; // Define the hostname for the server
 const Home = fs.readFileSync("./index.html", "utf-8");
 
@@ -32,6 +32,12 @@ const server = http.createServer((req, res, next, error) => {
   // next(); // next middleware Callback function if any route or file
 });
 
-server.listen(PORT, HOSTNAME, () => {
+// Handle errors that may occur during the server operation
+server.listen(PORT, () => {
   console.log(`Server is running at http://${HOSTNAME}:${PORT}/`);
 });
+
+// Start the server and listen on the specified port and hostname
+// server.listen(PORT, HOSTNAME, () => {
+//   console.log(`Server is running at http://${HOSTNAME}:${PORT}/`);
+// });

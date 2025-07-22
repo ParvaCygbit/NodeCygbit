@@ -33,6 +33,6 @@
 
 // in http module we create server using http.createServer() method
 // and we can handle different routes using if else statements
-// now we deploy this server on heroku using git
-// to deploy this server on heroku we need to create a heroku app and then push the code to heroku using git
-// we can also use heroku CLI to deploy the server
+// now we deploy this server on render.com using git
+// to deploy this server on render we need to create a render Web Service and then push the code to git
+// we can also use Render CLI to deploy the server
