@@ -33,6 +33,24 @@
 
 // in http module we create server using http.createServer() method
 // and we can handle different routes using if else statements
+
+
 // now we deploy this server on render.com using git
 // to deploy this server on render we need to create a render Web Service and then push the code to git
-// we can also use Render CLI to deploy the server
+// we can also use Render CLI to deploy the server install Render CLI using 
+// "curl -fsSL https://raw.githubusercontent.com/render-oss/cli/refs/heads/main/bin/install.sh | sh" globaly 
+// ADD PATH "export PATH=$PATH:/Users/cygbitdeveloper/.local/bin" AND version using "/Users/cygbitdeveloper/.local/bin/render --version"
+// now for uninstall "sudo rm ~/.local/bin/render" and run this to confirm "ls -l ~/.local/bin/render" and "render --version"
+// now we run "render login" to login to render.com using CLI and it will ask for token
+// You can manage and revoke CLI tokens from your account settings page at any time.
+// now run "render workspace set" to set the workspace to render account details 
+// now we can use "render services" to show list of services on render.com
+
+// not working commont learn more about it
+// we can also create a web service using "render services create --type web --name <service-name> --repo <repo-url> --branch <branch-name> --plan <free> --region <region> --env <env-type> --build-command <command> --start-command <command>" ask for service name, repo-url, branch-name, free, region, node, "npm install" and "npm start" 
+// we can also use "render dashboard[SERVICE_ID]" to open the server in browser
+// we can also use "render deploys list[SERVICE_ID]" and "render deploys list --service <service-name>" to show deploys of the service
+// we can also use "render deploys create[SERVICE_ID]" to create new deploy of the service
+// we can also use "render logs[SERVICE_ID]" to see the logs of the server
+// we can also use "render restart[SERVICE_ID]" to restart the server 
+

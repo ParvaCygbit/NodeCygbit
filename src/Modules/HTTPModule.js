@@ -33,11 +33,11 @@ const server = http.createServer((req, res, next, error) => {
 });
 
 // Handle errors that may occur during the server operation
-server.listen(PORT, () => {
-  console.log(`Server is running at http://${HOSTNAME}:${PORT}/`);
-});
-
-// Start the server and listen on the specified port and hostname
-// server.listen(PORT, HOSTNAME, () => {
+// server.listen(PORT, () => {
 //   console.log(`Server is running at http://${HOSTNAME}:${PORT}/`);
 // });
+
+// Start the server and listen on the specified port and hostname
+server.listen(PORT, HOSTNAME, () => {
+  console.log(`Server is running at http://${HOSTNAME}:${PORT}/`);
+});
