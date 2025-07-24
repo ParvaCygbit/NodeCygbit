@@ -26,4 +26,4 @@ npm run super-server
 
 ## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+You've successfully run and modified your NodeJS BackEND SetUp :partying_face:
